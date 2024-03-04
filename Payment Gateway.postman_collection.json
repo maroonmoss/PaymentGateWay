@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "c0bb19fa-b451-40be-ab28-8db65fd70925",
+		"name": "Payment Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1698262"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/confirm-transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accNo\": \"1234567890\",\r\n    \"id\": \"0812345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/confirm-transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"confirm-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/verify-transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accNo\": \"1234567890\",\r\n    \"id\": \"0812345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/verify-transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"verify-transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
